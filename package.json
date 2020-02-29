@@ -1,0 +1,22 @@
+{
+  "name": "test-vue",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "NODE_ENV=development ./node_modules/veigar-cli/bin/veigar build -w",
+    "build": "./node_modules/veigar-cli/bin/veigar build",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "bulma": "^0.8.0",
+    "mini.css": "^3.0.1",
+    "pinia": "^0.1.0-alpha.1"
+  },
+  "devDependencies": {
+    "typescript": "^3.8.2"
+  },
+  "browserslist": [
+    "Android >= 4",
+    "ios >= 8"
+  ]
+}
