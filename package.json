@@ -10,7 +10,8 @@
   "dependencies": {
     "bulma": "^0.8.0",
     "mini.css": "^3.0.1",
-    "pinia": "^0.1.0-alpha.1"
+    "pinia": "^0.1.0-alpha.1",
+    "vue": "^3.0.0-alpha.7"
   },
   "devDependencies": {
     "typescript": "^3.8.2"

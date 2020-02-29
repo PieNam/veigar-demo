@@ -2,10 +2,61 @@
 # yarn lockfile v1
 
 
+"@vue/compiler-core@3.0.0-alpha.7":
+  version "3.0.0-alpha.7"
+  resolved "http://bnpm.byted.org/@vue/compiler-core/download/@vue/compiler-core-3.0.0-alpha.7.tgz#8e6e71134221f04ae420e76fe68feab87651fc51"
+  integrity sha1-jm5xE0Ih8ErkIOdv5o/quHZR/FE=
+  dependencies:
+    acorn "^7.1.0"
+    estree-walker "^0.8.1"
+    source-map "^0.6.1"
+
+"@vue/compiler-dom@3.0.0-alpha.7":
+  version "3.0.0-alpha.7"
+  resolved "http://bnpm.byted.org/@vue/compiler-dom/download/@vue/compiler-dom-3.0.0-alpha.7.tgz#ddd7f4c23e80ba67c5f40d0747cc5901ba0b6ee9"
+  integrity sha1-3df0wj6AumfF9A0HR8xZAboLbuk=
+  dependencies:
+    "@vue/compiler-core" "3.0.0-alpha.7"
+
+"@vue/reactivity@3.0.0-alpha.7":
+  version "3.0.0-alpha.7"
+  resolved "http://bnpm.byted.org/@vue/reactivity/download/@vue/reactivity-3.0.0-alpha.7.tgz#fb5291ea94bb4bc4a02cb04cd7bc424f0f07e0e4"
+  integrity sha1-+1KR6pS7S8SgLLBM17xCTw8H4OQ=
+
+"@vue/runtime-core@3.0.0-alpha.7":
+  version "3.0.0-alpha.7"
+  resolved "http://bnpm.byted.org/@vue/runtime-core/download/@vue/runtime-core-3.0.0-alpha.7.tgz#3b58d95adb3f1c6c3c25178010c4398adf2ea858"
+  integrity sha1-O1jZWts/HGw8JReAEMQ5it8uqFg=
+  dependencies:
+    "@vue/reactivity" "3.0.0-alpha.7"
+
+"@vue/runtime-dom@3.0.0-alpha.7":
+  version "3.0.0-alpha.7"
+  resolved "http://bnpm.byted.org/@vue/runtime-dom/download/@vue/runtime-dom-3.0.0-alpha.7.tgz#fb6fddbf0200143f10d7a4440b16c19da03a6b40"
+  integrity sha1-+2/dvwIAFD8Q16RECxbBnaA6a0A=
+  dependencies:
+    "@vue/runtime-core" "3.0.0-alpha.7"
+    csstype "^2.6.8"
+
+acorn@^7.1.0:
+  version "7.1.0"
+  resolved "http://bnpm.byted.org/acorn/download/acorn-7.1.0.tgz#949d36f2c292535da602283586c2477c57eb2d6c"
+  integrity sha1-lJ028sKSU12mAig1hsJHfFfrLWw=
+
 bulma@^0.8.0:
   version "0.8.0"
   resolved "http://bnpm.byted.org/bulma/download/bulma-0.8.0.tgz#ac1606431703a4761b18a4a2d5cc1fa864a2aece"
   integrity sha1-rBYGQxcDpHYbGKSi1cwfqGSirs4=
+
+csstype@^2.6.8:
+  version "2.6.9"
+  resolved "http://bnpm.byted.org/csstype/download/csstype-2.6.9.tgz#05141d0cd557a56b8891394c1911c40c8a98d098"
+  integrity sha1-BRQdDNVXpWuIkTlMGRHEDIqY0Jg=
+
+estree-walker@^0.8.1:
+  version "0.8.1"
+  resolved "http://bnpm.byted.org/estree-walker/download/estree-walker-0.8.1.tgz#6230ce2ec9a5cb03888afcaf295f97d90aa52b79"
+  integrity sha1-YjDOLsmlywOIivyvKV+X2QqlK3k=
 
 mini.css@^3.0.1:
   version "3.0.1"
@@ -17,7 +68,20 @@ pinia@^0.1.0-alpha.1:
   resolved "http://bnpm.byted.org/pinia/download/pinia-0.1.0-alpha.1.tgz#965bd3fa9d95e846f21450c8d99048a11ac7e3e9"
   integrity sha1-llvT+p2V6EbyFFDI2ZBIoRrH4+k=
 
+source-map@^0.6.1:
+  version "0.6.1"
+  resolved "http://bnpm.byted.org/source-map/download/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
+  integrity sha1-dHIq8y6WFOnCh6jQu95IteLxomM=
+
 typescript@^3.8.2:
   version "3.8.2"
   resolved "http://bnpm.byted.org/typescript/download/typescript-3.8.2.tgz#91d6868aaead7da74f493c553aeff76c0c0b1d5a"
   integrity sha1-kdaGiq6tfadPSTxVOu/3bAwLHVo=
+
+vue@^3.0.0-alpha.7:
+  version "3.0.0-alpha.7"
+  resolved "http://bnpm.byted.org/vue/download/vue-3.0.0-alpha.7.tgz#b88ac5b08bf56e79ae1e310d63ec84688ec15fa5"
+  integrity sha1-uIrFsIv1bnmuHjENY+yEaI7BX6U=
+  dependencies:
+    "@vue/compiler-dom" "3.0.0-alpha.7"
+    "@vue/runtime-dom" "3.0.0-alpha.7"

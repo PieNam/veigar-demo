@@ -26,14 +26,13 @@
 </template>
 
 <script>
-import { ref } from 'veigar';
-import { useMainStore, STATUS } from '@/store';
+import { useMainStore, STATUS } from '../../store';
 
 export default {
   setup() {
     const store = useMainStore();
 
-    const handleClick = e => {
+    const handleClick = () => {
       tt.navigateTo({
         url: '/pages/index2/index', // 指定页面的url
       });
