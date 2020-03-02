@@ -17,7 +17,7 @@
           <div class="text">
             {{ item.text }}
           </div>
-          <div @click="handleNotCheck(item)"><checkbox />撤回</div>
+          <view @click="handleNotCheck(item)"><checkbox />撤回</view>
         </div>
       </div>
     </div>
@@ -25,12 +25,16 @@
   </div>
 </template>
 
-<script>
-import { useMainStore, STATUS } from '../../store';
+<script lang="ts">
+import { useMainStore, STATUS } from '@/store';
 
 export default {
   setup() {
     const store = useMainStore();
+
+    // setTimeout(() => {
+    //   store.checkTodo(0);
+    // }, 2000);
 
     const handleClick = () => {
       tt.navigateTo({
@@ -38,13 +42,14 @@ export default {
       });
     };
 
-    const handleCheck = item => {
+    const handleCheck = (item: any) => {
       console.log(item);
       store.checkTodo(item.id);
     };
 
-    const handleNotCheck = item => {
+    const handleNotCheck = (item: any) => {
       store.deleteTodo(item.id);
+      console.log(store);
     };
 
     return {
